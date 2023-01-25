@@ -3,7 +3,9 @@ body {
 }
 
 .container {
-    background-color: #93C6E7;
+    background-image: url(./img/pexels-jess-loiterton-4321465.jpg);
+    background-position: center;
+    background-size: cover;
     height: 100vh;
     display: flex;
     flex-direction: column-reverse;
@@ -12,13 +14,16 @@ body {
 }
 
 .progress-bar {
-    background-color: #AEE2FF;
+    background-color: white;
+    opacity: 0.3;
+    
     width: 100%;
     height: 10px;
 }
 
 
 .button-container{
+    z-index: 3;
     position: absolute;
     top: 0;
     width: 100%;
