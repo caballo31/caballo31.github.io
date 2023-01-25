@@ -16,11 +16,11 @@ function start(){
                 window.navigator.vibrate(70);
             }
         }
-        var interval = setInterval(vibration, 1000)
+        setInterval(vibration, 1000)
         codeStopped = false;
     } else if (codeStopped == false) {
         progressBar.setAttribute('id', '');
-        clearInterval(interval);
+        clearInterval();
         codeStopped = true;
     }
 }
