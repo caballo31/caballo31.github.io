@@ -29,7 +29,6 @@ function start(){
         codeStopped = true;
         clearInterval(intervalId);
         progressBar.setAttribute('id', '');
-
-       
+        title.innerHTML = 'Inhalar';
     }
 }
