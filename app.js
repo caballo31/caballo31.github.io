@@ -13,7 +13,12 @@ function start(){
             if (counter == 5) {
                 window.navigator.vibrate(180);
                 counter = 0;
-                title.innerText = 'Expirar';
+                if (title.innerText == 'Inhalar'){
+                    title.innerText = 'Exhalar';
+                } else if (title.innerText == 'Exhalar'){
+                    title.innerHTML = 'Inhalar';
+                }
+               
             } else {
                 window.navigator.vibrate(70);
             }
