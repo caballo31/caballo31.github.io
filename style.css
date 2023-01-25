@@ -31,7 +31,7 @@ body {
     height: 80px;
     position: absolute;
     left: 50%;
-    top: 32%;
+    top: 35%;
     -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
 }
