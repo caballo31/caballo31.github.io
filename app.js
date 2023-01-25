@@ -9,10 +9,10 @@ function start(){
     function vibration () {
         counter++;
         if (counter == 5) {
-            navigator.vibrate(180);
+            window.navigator.vibrate(180);
             counter = 0;
         } else {
-            navigator.vibrate(70);
+            window.navigator.vibrate(70);
         }
     }
     setInterval(vibration, 1000)
