@@ -31,6 +31,18 @@ body {
     
 }
 
+
+.button-container .title{
+    position: absolute;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    left: 50%;
+    top: 42%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%)
+    
+}
+
 .button-container img {
     width: 60px;
     height: 60px;
@@ -51,7 +63,7 @@ body {
     height: 50px;
     position: absolute;
     left: 50%;
-    top: 50%;
+    top: 90%;
     -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
 }

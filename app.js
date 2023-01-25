@@ -1,5 +1,6 @@
 
 const progressBar = document.querySelector('.progress-bar');
+const title = document.querySelector('.title');
 
 let codeStopped = true;
 
@@ -12,15 +13,18 @@ function start(){
             if (counter == 5) {
                 window.navigator.vibrate(180);
                 counter = 0;
+                title.innerText = 'Expirar';
             } else {
                 window.navigator.vibrate(70);
             }
         }
-        interval = setInterval(vibration, 1000)
+        intervalId = setInterval(vibration, 1000)
         codeStopped = false;
     } else if (codeStopped == false) {
-        progressBar.setAttribute('id', '');
-        clearInterval(interval);
         codeStopped = true;
+        clearInterval(intervalId);
+        progressBar.setAttribute('id', '');
+
+       
     }
 }
