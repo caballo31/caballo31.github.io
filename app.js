@@ -4,7 +4,6 @@ const progressBar = document.querySelector('.progress-bar');
 
 
 function start(){
-    window.navigator.vibrate(70);
     progressBar.setAttribute('id','play-animation');
     let counter = 0;
     function vibration () {
