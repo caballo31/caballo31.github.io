@@ -1,12 +1,14 @@
 
 const progressBar = document.querySelector('.progress-bar');
 const title = document.querySelector('.title');
+const pulse = document.querySelector('.pulse');
 
 let codeStopped = true;
 
 function start(){
     if (codeStopped == true){
         progressBar.setAttribute('id','play-animation');
+        pulse.setAttribute('id','play-pulse')
         let counter = 0;
         function vibration () {
             counter++;
@@ -29,6 +31,8 @@ function start(){
         codeStopped = true;
         clearInterval(intervalId);
         progressBar.setAttribute('id', '');
+        pulse.setAttribute('id','')
+
         title.innerHTML = 'Inhalar';
     }
 }
