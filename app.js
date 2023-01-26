@@ -2,11 +2,13 @@
 const progressBar = document.querySelector('.progress-bar');
 const title = document.querySelector('.title');
 const pulse = document.querySelector('.pulse');
+const button = document.querySelector('#primary-button')
 
 let codeStopped = true;
 
 function start(){
     if (codeStopped == true){
+        button.innerText = 'Pausar'
         progressBar.setAttribute('id','play-animation');
         pulse.setAttribute('id','play-pulse')
         let counter = 0;
@@ -28,6 +30,7 @@ function start(){
         intervalId = setInterval(vibration, 1000)
         codeStopped = false;
     } else if (codeStopped == false) {
+        button.innerText = 'Iniciar'
         codeStopped = true;
         clearInterval(intervalId);
         progressBar.setAttribute('id', '');
